@@ -17,6 +17,9 @@ body {
 
 .output {
     margin-top: 20px;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    overflow: auto;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -38,6 +41,14 @@ body {
     border-radius: 25px;
 }
 
-.rowOne {
+.rowOne, .rowTwo, .rowThree {
     display: flex;
+
+}
+
+.output {
+    text-align: left;
+    font-family: 'Courier New';
+    font-size: 25px;
+    font-weight: bold;
 }
