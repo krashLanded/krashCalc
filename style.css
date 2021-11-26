@@ -29,6 +29,7 @@ body {
     padding: 10px;
     border-radius: 25px;
     background-color: #e6e2d3;
+    ;
 }
 
 .number {
@@ -38,7 +39,7 @@ body {
     width: 133.3px;
     height: 100px;
     border: 3px solid black;
-
+    transition: 0.2s;
     border-radius: 25px;
 }
 
@@ -62,4 +63,9 @@ body {
     font-family: 'Helvetica';
     font-style: italic;
 
+}
+
+button:hover {
+    background-color: lightgray;
+    transition: 0.2s;
 }
