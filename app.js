@@ -24,6 +24,28 @@ numberButtons.forEach(function(item) {
 });
 //
 
+//addition functionality
+const additionButton = document.querySelector('.plus');
+additionButton.addEventListener('click', function() {
+    valueHolder = valueHolder + additionButton.innerHTML;
+    output.innerHTML = valueHolder;
+});
+
+const subtractButton = document.querySelector('.minus');
+subtractButton.addEventListener('click', function() {
+    valueHolder = valueHolder + subtractButton.innerHTML;
+    output.innerHTML = valueHolder;
+});
+
+//equals operator
+const equalsButton = document.querySelector('.equals');
+equalsButton.addEventListener('click', function() {
+    let equation = valueHolder;
+    let answer = eval(equation);
+    output.innerHTML = answer;
+});
+
+
 
 
 
