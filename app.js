@@ -31,6 +31,7 @@ additionButton.addEventListener('click', function() {
     output.innerHTML = valueHolder;
 });
 
+//subtract functionality
 const subtractButton = document.querySelector('.minus');
 subtractButton.addEventListener('click', function() {
     valueHolder = valueHolder + subtractButton.innerHTML;
@@ -42,10 +43,41 @@ const equalsButton = document.querySelector('.equals');
 equalsButton.addEventListener('click', function() {
     let equation = valueHolder;
     let answer = eval(equation);
-    output.innerHTML = answer;
+    valueHolder = answer;
+    output.innerHTML = valueHolder;
 });
 
+//multiply functionality
+const multiplyButton = document.querySelector('.multiply');
+multiplyButton.addEventListener('click', function() {
+    valueHolder = valueHolder + multiplyButton.innerHTML;
+    output.innerHTML = valueHolder;
+});
 
+//divide functionality
+const divideButton = document.querySelector('.divide');
+divideButton.addEventListener('click', function() {
+    valueHolder = valueHolder + divideButton.innerHTML;
+    output.innerHTML = valueHolder;
+});
 
+//
+const backspaceButton = document.querySelector('.backspace');
+backspaceButton.addEventListener('click', () => {
+    valueHolder = valueHolder.substring(0, valueHolder.length - 1);
+    output.innerHTML = valueHolder;
+});
+
+const firstPButton = document.querySelector('.firstP');
+firstPButton.addEventListener('click', function() {
+    valueHolder = valueHolder + firstPButton.innerHTML;
+    output.innerHTML = valueHolder;
+});
+
+const lastPButton = document.querySelector('.lastP');
+lastPButton.addEventListener('click', function() {
+    valueHolder = valueHolder + lastPButton.innerHTML;
+    output.innerHTML = valueHolder;
+});
 
 
